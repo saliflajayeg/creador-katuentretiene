@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F5F6FA">
+<title>Tu página de creador · Mercado Semu</title>
+<meta name="description" content="Tu tienda personal para el link de tu bio. Recomienda productos a tus seguidores y gana una comisión por cada venta.">
+<link rel="icon" href="../img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="home" data-page="home" data-root="../" data-slug="katu" data-live="1">
+
+<header class="topbar">
+  <div class="wrapin">
+    <a class="brand" href="#"><img src="../img/logo.png" alt=""><span>Mercado Semu</span></a>
+    <span class="spacer"></span>
+    <span class="pill-demo" style="background:var(--gold)">DEMO</span>
+    <a class="nav-cta" href="#" data-contact>Quiero mi página</a>
+  </div>
+</header>
+
+<section class="h-hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#E32118"/><rect width="30" height="13.4" fill="#fff"/><rect width="30" height="6.6" fill="#3E9A00"/><path d="M0 0l9 10-9 10z" fill="#0073CE"/></svg> Para creadores de contenido de Guinea Ecuatorial</span>
+      <h1 class="h1">Tus seguidores confían en ti. <em>Que eso te pague.</em></h1>
+      <p class="lead">Ten tu propia tienda en el link de tu bio de Instagram, TikTok o Facebook. Recomienda productos de negocios locales, o los tuyos, y gana una comisión por cada venta.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-navy" href="#ejemplos">Ver ejemplos</a>
+        <a class="btn btn-light" href="#calculadora">¿Cuánto puedo ganar?</a>
+      </div>
+      <div class="trust">
+        <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Gratis para creadores</span>
+        <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Pedidos por WhatsApp</span>
+        <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Cobras cada mes</span>
+      </div>
+    </div>
+    <div class="phone-stage">
+      <div class="phone"><div class="screen"><iframe id="phone-frame" title="Página de ejemplo" loading="lazy"></iframe></div></div>
+      <div class="phone-tabs" id="phone-tabs" role="group" aria-label="Elegir ejemplo"></div>
+    </div>
+  </div>
+</section>
+
+<section class="h-sec alt">
+  <div class="wrap">
+    <h2>Así funciona</h2>
+    <p class="intro">Cuatro pasos. Tú solo haces lo que ya haces: crear contenido y recomendar.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Eliges qué recomendar</h3><p>Productos de negocios de Mercado Semu que pagan comisión, o tus propios productos y servicios.</p></div>
+      <div class="step"><div class="num">2</div><h3>Pones tu link en la bio</h3><p><b>tunombre.mercadosemu.com</b>. Tu propia web, un solo link para Instagram, TikTok y Facebook.</p></div>
+      <div class="step"><div class="num">3</div><h3>Tus seguidores piden</h3><p>Pulsan «Pedir» y el pedido le llega al vendedor por WhatsApp con tu código. Pagan al recibir.</p></div>
+      <div class="step"><div class="num">4</div><h3>Cobras tu comisión</h3><p>Cada pedido entregado suma en tu panel. Te pagamos a principios de cada mes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="h-sec" id="ejemplos">
+  <div class="wrap">
+    <h2>Mira cómo quedaría la tuya</h2>
+    <p class="intro">Hemos preparado tres páginas de ejemplo, cada una con el estilo de su creador. Ábrelas en el móvil y prueba a hacer un pedido.</p>
+    <div class="inf-grid" id="inf-grid"></div>
+  </div>
+</section>
+
+<section class="h-sec alt" id="calculadora">
+  <div class="wrap">
+    <h2>¿Cuánto puedes ganar?</h2>
+    <p class="intro">Mueve las barras con tus números. Es una estimación: depende de lo que recomiendes y de cómo lo cuentes.</p>
+    <div class="calc">
+      <div class="calc-box">
+        <div class="slider"><div class="lab"><label for="seg">Tus seguidores</label><output id="o-seg"></output></div><input type="range" id="seg" min="1000" max="100000" step="1000" value="12000"></div>
+        <div class="slider"><div class="lab"><label for="conv">Cuántos te compran algo al mes</label><output id="o-conv"></output></div><input type="range" id="conv" min="0.1" max="3" step="0.1" value="0.5"></div>
+        <div class="slider"><div class="lab"><label for="ticket">Precio medio de lo que venden</label><output id="o-ticket"></output></div><input type="range" id="ticket" min="1000" max="60000" step="1000" value="10000"></div>
+        <div class="slider"><div class="lab"><label for="com">Tu comisión</label><output id="o-com"></output></div><input type="range" id="com" min="5" max="20" step="1" value="10"></div>
+      </div>
+      <div class="result">
+        <div class="k">Podrías ganar al mes</div>
+        <div class="money" id="r-money"></div>
+        <div class="detail" id="r-detail"></div>
+        <div class="year">En un año: <b id="r-year"></b></div>
+      </div>
+    </div>
+    <p class="calc-note">Ejemplo: con 12.000 seguidores, si solo 1 de cada 200 compra algo de 10.000 FCFA al mes, son 60 ventas.</p>
+  </div>
+</section>
+
+<section class="h-sec">
+  <div class="wrap">
+    <h2>Lo que ya haces, pero cobrando</h2>
+    <p class="intro">Ya promocionas restaurantes, fiestas y tiendas. La diferencia es lo que te queda a ti.</p>
+    <div class="compare">
+      <div class="cmp">
+        <h3>Hoy</h3>
+        <ul>
+          <li>Haces la promo y te pagan una vez, o nada.</li>
+          <li>El vídeo se pierde en tu perfil a los dos días.</li>
+          <li>No sabes cuántas ventas trajiste.</li>
+          <li>Sin datos, cuesta pedir más a las marcas.</li>
+        </ul>
+      </div>
+      <div class="cmp good">
+        <h3>Con tu página</h3>
+        <ul>
+          <li>Cobras por cada venta, todos los meses.</li>
+          <li>Tus recomendaciones se quedan en tu página.</li>
+          <li>Tu panel te dice visitas, pedidos y ganancias.</li>
+          <li>Con esos números, negocias mejor con las marcas.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="h-sec alt">
+  <div class="wrap biz">
+    <div>
+      <h2>¿Y de dónde sale tu comisión?</h2>
+      <p class="intro">La paga el negocio, y solo cuando vende. Para ellos es publicidad sin riesgo. Para ti, dinero por cada recomendación que funciona.</p>
+    </div>
+    <div class="flow">
+      <div class="f"><span class="e">🛍️</span><span>Un seguidor de <b>Reina</b> pide un perfume de <b>35.000 FCFA</b></span></div>
+      <div class="f"><span class="e">🚚</span><span>La tienda lo entrega y cobra al cliente</span></div>
+      <div class="f"><span class="e">✅</span><span>El pedido queda marcado como <b>entregado</b> con el código REINA</span></div>
+      <div class="money-split">
+        <div><b>33.250</b>Cliente paga (−5 %)</div>
+        <div><b>3.990</b>Reina gana (12 %)</div>
+        <div><b>29.260</b>La tienda recibe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="h-sec">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details><summary>¿Cuánto me cuesta?</summary><p>Nada. Tener tu página es gratis. Solo ganas: la comisión la pagan los negocios cuando venden.</p></details>
+      <details><summary>¿Cuándo y cómo cobro?</summary><p>A principios de cada mes te pagamos todo lo de los pedidos entregados el mes anterior, por transferencia o en efectivo. En tu panel ves siempre cuánto llevas.</p></details>
+      <details><summary>¿Y si el vendedor no dice que vendió?</summary><p>Cada pedido pasa por la plataforma y llega al vendedor con tu código y un número de pedido, así que queda registrado. Además, el cliente tiene descuento con tu código, así que es el primero en querer usarlo. Los negocios que no declaren sus ventas salen de la plataforma.</p></details>
+      <details><summary>¿Puedo vender mis propios productos o servicios?</summary><p>Sí. Tu ropa, tus entradas, tus servicios de presentador o de animación… Los subes a tu página y cobras la venta entera, menos una pequeña tarifa.</p></details>
+      <details><summary>¿Tengo que dejar mis colaboraciones actuales?</summary><p>No. Sigue haciendo tus promos como siempre. Esto es un ingreso más, y además una sección «Colabora conmigo» para que las marcas te contraten.</p></details>
+      <details><summary>¿Qué productos puedo recomendar?</summary><p>Los que tú quieras del catálogo: comida, moda, belleza, tecnología, eventos… Solo recomienda lo que de verdad te guste. Es lo que hace que tus seguidores compren.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="h-sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="final">
+      <h2>Sé de los primeros</h2>
+      <p>Estamos eligiendo a los primeros creadores de Guinea Ecuatorial. Los fundadores tendrán su página destacada en la portada.</p>
+      <a class="btn" href="#" data-contact>Quiero mi página</a>
+    </div>
+  </div>
+</section>
+
+<footer class="h-foot">Una propuesta de Mercado Semu · Demostración, octubre 2026</footer>
+
+<script src="../assets/data.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
